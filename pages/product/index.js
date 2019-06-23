@@ -22,10 +22,13 @@
 
   const $headerContent = headerContent.render();
   const $moreProducts = moreProducts.render();
+  const $newsletterContent = newsletterContent.render();
 
   const $headerWrapper = headerWrapper.render($headerContent);
+  const $newsletterWrapper = newsletterWrapper.render($newsletterContent);
 
   $root.insertAdjacentHTML("beforeend", $headerWrapper);
   $root.insertAdjacentHTML("beforeend", $productWrapper);
   $root.insertAdjacentHTML("beforeend", $moreProducts);
+  $root.insertAdjacentHTML("beforeend", $newsletterWrapper);
 })();
