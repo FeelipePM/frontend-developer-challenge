@@ -21,9 +21,11 @@
   );
 
   const $headerContent = headerContent.render();
+  const $moreProducts = moreProducts.render();
 
   const $headerWrapper = headerWrapper.render($headerContent);
 
   $root.insertAdjacentHTML("beforeend", $headerWrapper);
   $root.insertAdjacentHTML("beforeend", $productWrapper);
+  $root.insertAdjacentHTML("beforeend", $moreProducts);
 })();
