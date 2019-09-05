@@ -1,15 +1,11 @@
-let $nextPage = 2;
-
-const createdProducts = () => {
+const products = () => {
   const request = new XMLHttpRequest();
 
   request.open(
     "GET",
-    `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${$nextPage}`,
+    "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1",
     true
   );
-
-  $nextPage++;
 
   request.onload = function() {
     const data = JSON.parse(this.response);
